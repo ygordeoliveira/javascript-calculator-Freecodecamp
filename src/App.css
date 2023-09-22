@@ -1,0 +1,45 @@
+body {
+    background-color: #c2c2d6;
+}
+
+header {
+    position: fixed; /* Fixa o cabeçalho na tela */
+    top: 0; /* O cabeçalho ficará no topo da tela */
+    left: 0; /* Alinha o cabeçalho à esquerda da tela */
+    width: 100%; /* O cabeçalho ocupará toda a largura da tela */
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 10px 0; /* Espaçamento interno do cabeçalho */
+    z-index: 999; /* Para garantir que o cabeçalho esteja sempre na parte superior */
+}
+
+.container {
+    width: 660px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.fixed-display {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: DarkGrey;
+    border-radius: 4px;
+    text-align: left;
+	  white-space: nowrap; /* Impede que o conteúdo seja quebrado em várias linhas */
+	  overflow: hidden; /* Esconde o conteúdo que não couber no visor */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
