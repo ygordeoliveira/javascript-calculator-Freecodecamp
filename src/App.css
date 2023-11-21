@@ -18,7 +18,6 @@ header {
     width: 660px;
 }
 
-
 .buttons {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
