@@ -40,7 +40,7 @@ class Calculator extends Component {
             <div className="calculator-container">
                 <div className="calculator bg-secondary p-4">
                     <div className="display fixed-display">{this.state.displayValue}</div>
-                        <div className="buttons ms-2">
+                        <div className="buttons">
                             <button onClick={() => this.handleDigitClick("7")}>7</button>
                             <button onClick={() => this.handleDigitClick("8")}>8</button>
                             <button onClick={() => this.handleDigitClick("9")}>9</button>
