@@ -3,6 +3,7 @@ body {
 }
 
 header {
+    font-size: 25px;
     position: fixed; /* Fixa o cabeçalho na tela */
     top: 0; /* O cabeçalho ficará no topo da tela */
     left: 0; /* Alinha o cabeçalho à esquerda da tela */
@@ -15,12 +16,20 @@ header {
 }
 
 .container {
-    width: 660px;
+    width: 670px;
+}
+
+.calculator-container {
+    margin-top: 100px;
 }
 
 .buttons {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 150px 150px 150px 140px;
+}
+
+button {
+    height: 50px;
 }
 
 .fixed-display {
@@ -31,8 +40,8 @@ header {
     background-color: DarkGrey;
     border-radius: 4px;
     text-align: left;
-	  white-space: nowrap; /* Impede que o conteúdo seja quebrado em várias linhas */
-	  overflow: hidden; /* Esconde o conteúdo que não couber no visor */
+	white-space: nowrap; /* Impede que o conteúdo seja quebrado em várias linhas */
+	overflow: hidden; /* Esconde o conteúdo que não couber no visor */
 }
 
 .footer {
@@ -41,4 +50,192 @@ header {
     padding: 10px;
     text-align: center;
     width: 100%;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1550px) {
+    .container {
+        width: 670px;
+    }
+
+    .calculator-container {
+        margin-top: 90px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 770px) {
+    .container {
+        width: 670px;
+    }
+
+    .calculator-container {
+        margin-top: 87px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 120px 120px 120px 110px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 649px) {
+    .container {
+        width: 600px;
+    }
+
+    .calculator-container {
+        margin-top: 92px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 117px 117px 117px 117px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    header {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 500px;
+    }
+
+    .calculator-container {
+        margin-top: 85px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 110px 110px 110px 100px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    header {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .calculator-container {
+        margin-top: 85px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 82px 82px 82px 84px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+    header {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .calculator-container {
+        margin-top: 85px;
+    }
+
+    .fixed-display {
+        font-size: 23px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 57px 57px 57px 55px;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 299px) {
+    header {
+        font-size: 17px;
+    }
+
+    .container {
+        width: 250px;
+    }
+
+    .calculator-container {
+        margin-top: 80px;
+    }
+
+    .fixed-display {
+        font-size: 19px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 45px 45px 45px 45px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 249px) {
+    header {
+        font-size: 17px;
+    }
+
+    .container {
+        width: 200px;
+    }
+
+    .calculator-container {
+        margin-top: 85px;
+    }
+
+    .fixed-display {
+        font-size: 18px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 32px 32px 32px 32px;
+    }
+
+    footer {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 199px) {
+    header {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 153px;
+    }
+
+    .calculator-container {
+        margin-top: 80px;
+    }
+
+    .fixed-display {
+        width: 85px;
+        font-size: 15px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 20px 20px 20px 20px;
+    }
+
+    button {
+        width: 25px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
 }
